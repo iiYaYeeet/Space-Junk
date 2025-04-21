@@ -18,6 +18,7 @@ public class postscript : MonoBehaviour
     [Header("Components")]
     public TMPro.TextMeshProUGUI tweetText;
     public TMPro.TextMeshProUGUI comnoteText;
+    public Animator anim;
 
     public void Start()
     {
@@ -29,19 +30,24 @@ public class postscript : MonoBehaviour
     {
         if (c == true && istrue == factuality.misinformation)
         {
-            //wrong
+            Debug.Log("no");
         }
         if (c == true && istrue == factuality.factual)
         {
-            //yippiee
+            anim.SetBool("rated", true);
         }
         if (c == false && istrue == factuality.misinformation)
         {
-            //yippiee
+            anim.SetBool("rated", true);
         }
         if (c == false && istrue == factuality.factual)
         {
-            //wrong
+            Debug.Log("no");
         }
+    }
+
+    public void dropdown()
+    {
+        anim.SetBool("rate", true);
     }
 }
