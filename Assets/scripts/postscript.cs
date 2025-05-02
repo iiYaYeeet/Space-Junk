@@ -15,6 +15,7 @@ public class postscript : MonoBehaviour
     public TMPro.TextMeshProUGUI tweetText;
     public TMPro.TextMeshProUGUI comnoteText;
     public Animator anim;
+    public GameObject source;
     [Header("Int")]
     [SerializeField] private int tweetsel;
 
@@ -26,21 +27,23 @@ public class postscript : MonoBehaviour
         tweetText.text = twittercontroller.God.TC.dictionary[tweetsel].post;
         comnoteText.text = twittercontroller.God.TC.dictionary[tweetsel].communitynote;
         istrue = twittercontroller.God.TC.dictionary[tweetsel].isfactual;
+        source = twittercontroller.God.TC.dictionary[tweetsel].source;
     }
 
     public void check(bool c)
     {
+        anim.SetBool("rate", true);
         if (c == true && istrue == twittercontroller.God.factuality.misinformation)
         {
             Debug.Log("no");
         }
         if (c == true && istrue == twittercontroller.God.factuality.factual)
         {
-            anim.SetBool("rated", true);
+            Debug.Log("yes");
         }
         if (c == false && istrue == twittercontroller.God.factuality.misinformation)
         {
-            anim.SetBool("rated", true);
+            Debug.Log("yes");
         }
         if (c == false && istrue == twittercontroller.God.factuality.factual)
         {
@@ -48,8 +51,28 @@ public class postscript : MonoBehaviour
         }
     }
 
+    public void sourcecheck()
+    {
+        if (source == twittercontroller.God.TC.clipboard)
+        {
+            anim.SetBool("rated", true);
+        }
+    }
+
     public void dropdown()
     {
-        anim.SetBool("rate", true);
+        if (anim.GetBool("selected"))
+        {
+            anim.SetBool("selected", false);
+        }
+        else
+        {
+            anim.SetBool("selected", true);
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        Destroy(gameObject);
     }
 }

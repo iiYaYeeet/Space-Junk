@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using AYellowpaper.SerializedCollections;
@@ -17,6 +18,9 @@ public class twittercontroller : MonoBehaviour
     [Header("Objects")] 
     public GameObject parent;
     public GameObject postprefab;
+    public GameObject clipboard;
+    public Transform spawnpos;
+    public Collider2D col;
     //[Header("Audio")] 
     //Audio
 
@@ -26,6 +30,7 @@ public class twittercontroller : MonoBehaviour
             [TextArea(3, 10)] public string post;
             [TextArea(3, 10)] public string communitynote;
             public God.factuality isfactual;
+            public GameObject source;
         }
         public SerializedDictionary<int, serializableClass> dictionary;
         #endregion
@@ -47,6 +52,7 @@ public class twittercontroller : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         Debug.Log(dictionary[0].post);
         Debug.Log(dictionary[0].communitynote);
         Debug.Log(dictionary[0].isfactual);
@@ -56,8 +62,17 @@ public class twittercontroller : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Debug.Log(Input.GetAxis("Mouse X"));
-            parentrb.AddForce(transform.up*Input.GetAxis("Mouse Y")*20);
+            Debug.Log(Input.GetAxis("Mouse Y"));
+            parentrb.AddForce(transform.up*Mathf.Abs(Input.GetAxis("Mouse Y")*20));
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (parentrb.velocity.y >= 0)
+        {
+            GameObject post = Instantiate(postprefab, spawnpos.transform.position, Quaternion.identity);
+            post.transform.parent = parent.transform;
         }
     }
 }
