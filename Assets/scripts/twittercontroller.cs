@@ -22,6 +22,7 @@ public class twittercontroller : MonoBehaviour
     public Collider2D col;
     //[Header("Audio")] 
     //Audio
+    public bool freeze;
     #endregion
     void Awake()
     {
@@ -31,9 +32,12 @@ public class twittercontroller : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (!freeze)
         {
-            parentrb.AddForce(transform.up*Mathf.Abs(Input.GetAxis("Mouse Y")*20));
+            if (Input.GetMouseButton(0))
+            {
+                parentrb.AddForce(transform.up*Mathf.Abs(Input.GetAxis("Mouse Y")*20));
+            }
         }
     }
 

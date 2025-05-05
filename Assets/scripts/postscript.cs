@@ -15,9 +15,11 @@ public class postscript : MonoBehaviour
     public int sourcekey;
     [Header("Int")]
     [SerializeField] public int sel;
+    public CanvasGroup cg;
 
     public void Start()
     {
+        serversidecontroller.God.SC.postsc.Add(this);
         sel = serversidecontroller.God.SC.sel;
         tweetText.text = serversidecontroller.God.SC.x[sel].post;
         comnoteText.text = serversidecontroller.God.SC.x[sel].communitynote;
@@ -27,6 +29,7 @@ public class postscript : MonoBehaviour
 
     public void check(bool c)
     {
+        serversidecontroller.God.SC.freeze(this);
         anim.SetBool("rate", true);
         if (c == true && istrue == serversidecontroller.God.factuality.misinformation)
         {
@@ -58,6 +61,7 @@ public class postscript : MonoBehaviour
     {
         if (anim.GetBool("selected"))
         {
+            serversidecontroller.God.SC.thaw(this);
             anim.SetBool("selected", false);
         }
         else

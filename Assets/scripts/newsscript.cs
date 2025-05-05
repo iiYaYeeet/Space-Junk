@@ -10,9 +10,11 @@ public class newsscript : MonoBehaviour
     public TMPro.TextMeshProUGUI link;
     [Header("Int")]
     [SerializeField] public int sel;
+    public CanvasGroup cg;
 
     public void Start()
     {
+        serversidecontroller.God.SC.newssc.Add(this);
         sel = serversidecontroller.God.SC.sel;
         source.text = serversidecontroller.God.SC.nws[sel].source;
         article.text = serversidecontroller.God.SC.nws[sel].article;

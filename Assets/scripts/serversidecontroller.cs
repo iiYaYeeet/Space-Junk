@@ -36,6 +36,8 @@ public class serversidecontroller : MonoBehaviour
         }
     }
 
+    public List<postscript> postsc;
+    public List<newsscript> newssc;
     public void Awake()
     {
         God.SC = this;
@@ -50,5 +52,28 @@ public class serversidecontroller : MonoBehaviour
     public void rand()
     {
         sel = Random.Range(0, x.Count);
+    }
+
+    public void freeze(postscript caller)
+    {
+        foreach (postscript ps in postsc)
+        {
+            ps.cg.blocksRaycasts = false;
+            ps.cg.interactable = false;
+        }
+        caller.cg.blocksRaycasts = true;
+        caller.cg.interactable = true;
+        God.TC.freeze = true;
+        God.NC.freeze = true;
+    }
+    public void thaw(postscript caller)
+    {
+        foreach (postscript ps in postsc)
+        {
+            ps.cg.blocksRaycasts = true;
+            ps.cg.interactable = true;
+        }
+        God.TC.freeze = false;
+        God.NC.freeze = false;
     }
 }
