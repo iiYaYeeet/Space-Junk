@@ -1,10 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using AYellowpaper.SerializedCollections;
 using UnityEngine;
 
-public class twittercontroller : MonoBehaviour
+public class newscontroller : MonoBehaviour
 {
     #region Declerations
     [Header("Components")] 
@@ -23,11 +22,16 @@ public class twittercontroller : MonoBehaviour
     //[Header("Audio")] 
     //Audio
     #endregion
+
     void Awake()
     {
-        serversidecontroller.God.TC = this;
+        serversidecontroller.God.NC = this;
     }
 
+    void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
 
     void Update()
     {
@@ -41,10 +45,8 @@ public class twittercontroller : MonoBehaviour
     {
         if (parentrb.velocity.y >= 0)
         {
-            serversidecontroller.God.SC.rand();
             GameObject post = Instantiate(postprefab, spawnpos.transform.position, Quaternion.identity);
             post.transform.parent = parent.transform;
         }
     }
 }
-

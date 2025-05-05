@@ -122,7 +122,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &1154742839991583261
 GameObject:
@@ -647,14 +647,14 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &9159074441560964788
 MonoBehaviour:
@@ -2053,14 +2053,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4e0806edfc90e40bd4ce3417fe14fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tweet: space is fake
-  comnote: erhm akshully
   istrue: 1
   tweetText: {fileID: 3996414996753329079}
   comnoteText: {fileID: 6968393736669952187}
   anim: {fileID: 1020546275508795563}
-  source: {fileID: 0}
-  tweetsel: 0
+  sourcekey: 0
+  sel: 0
 --- !u!95 &1020546275508795563
 Animator:
   serializedVersion: 5

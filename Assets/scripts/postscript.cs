@@ -6,46 +6,41 @@ using Random = UnityEngine.Random;
 
 public class postscript : MonoBehaviour
 {
-    [Header("Text")] 
-    [SerializeField] private string tweet;
-    [SerializeField] private string comnote;
     [Header("enum")]
-    [SerializeField] twittercontroller.God.factuality istrue;
+    [SerializeField] serversidecontroller.God.factuality istrue;
     [Header("Components")]
     public TMPro.TextMeshProUGUI tweetText;
     public TMPro.TextMeshProUGUI comnoteText;
     public Animator anim;
-    public GameObject source;
+    public int sourcekey;
     [Header("Int")]
-    [SerializeField] private int tweetsel;
+    [SerializeField] public int sel;
 
     public void Start()
     {
-        Debug.Log(twittercontroller.God.TC.dictionary.Count);
-        tweetsel = Random.Range(0, twittercontroller.God.TC.dictionary.Count);
-        Debug.Log(tweetsel);
-        tweetText.text = twittercontroller.God.TC.dictionary[tweetsel].post;
-        comnoteText.text = twittercontroller.God.TC.dictionary[tweetsel].communitynote;
-        istrue = twittercontroller.God.TC.dictionary[tweetsel].isfactual;
-        source = twittercontroller.God.TC.dictionary[tweetsel].source;
+        sel = serversidecontroller.God.SC.sel;
+        tweetText.text = serversidecontroller.God.SC.x[sel].post;
+        comnoteText.text = serversidecontroller.God.SC.x[sel].communitynote;
+        istrue = serversidecontroller.God.SC.x[sel].isfactual;
+        sourcekey = serversidecontroller.God.SC.x[sel].sourcekey;
     }
 
     public void check(bool c)
     {
         anim.SetBool("rate", true);
-        if (c == true && istrue == twittercontroller.God.factuality.misinformation)
+        if (c == true && istrue == serversidecontroller.God.factuality.misinformation)
         {
             Debug.Log("no");
         }
-        if (c == true && istrue == twittercontroller.God.factuality.factual)
+        if (c == true && istrue == serversidecontroller.God.factuality.factual)
         {
             Debug.Log("yes");
         }
-        if (c == false && istrue == twittercontroller.God.factuality.misinformation)
+        if (c == false && istrue == serversidecontroller.God.factuality.misinformation)
         {
             Debug.Log("yes");
         }
-        if (c == false && istrue == twittercontroller.God.factuality.factual)
+        if (c == false && istrue == serversidecontroller.God.factuality.factual)
         {
             Debug.Log("no");
         }
@@ -53,7 +48,7 @@ public class postscript : MonoBehaviour
 
     public void sourcecheck()
     {
-        if (source == twittercontroller.God.TC.clipboard)
+        if (sourcekey == serversidecontroller.God.SC.clipboard)
         {
             anim.SetBool("rated", true);
         }
