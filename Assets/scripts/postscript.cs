@@ -15,7 +15,7 @@ public class postscript : MonoBehaviour
     public int sourcekey;
     [Header("Int")]
     [SerializeField] public int sel;
-    public CanvasGroup cg;
+    public CanvasGroup cg, correct_misninfo,wrong_misninfo,correct_truth,wrong_truth;
 
     public void Start()
     {
@@ -29,23 +29,25 @@ public class postscript : MonoBehaviour
 
     public void check(bool c)
     {
-        serversidecontroller.God.SC.freeze(this);
-        anim.SetBool("rate", true);
         if (c == true && istrue == serversidecontroller.God.factuality.misinformation)
         {
-            Debug.Log("no");
+            wrong_misninfo.alpha = 1;
         }
         if (c == true && istrue == serversidecontroller.God.factuality.factual)
         {
-            Debug.Log("yes");
+            correct_truth.alpha = 1;
+            serversidecontroller.God.SC.freeze(this);
+            anim.SetBool("rate", true);
         }
         if (c == false && istrue == serversidecontroller.God.factuality.misinformation)
         {
-            Debug.Log("yes");
+            correct_misninfo.alpha = 1;
+            serversidecontroller.God.SC.freeze(this);
+            anim.SetBool("rate", true);
         }
         if (c == false && istrue == serversidecontroller.God.factuality.factual)
         {
-            Debug.Log("no");
+            wrong_truth.alpha = 1;
         }
     }
 
@@ -55,6 +57,11 @@ public class postscript : MonoBehaviour
         {
             anim.SetBool("rated", true);
         }
+    }
+    public void softlockprevention()
+    {
+        anim.SetBool("rate",false);
+        serversidecontroller.God.SC.thaw(this);
     }
 
     public void dropdown()

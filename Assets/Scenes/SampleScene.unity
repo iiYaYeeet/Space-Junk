@@ -384,7 +384,7 @@ MonoBehaviour:
         link: welovespaceoverherepleasesendhelp.gov
   postsc: []
   newssc: []
-  clipboard: 0
+  clipboard: -1
   sel: 0
 --- !u!4 &168381095
 Transform:
