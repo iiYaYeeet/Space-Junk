@@ -364,24 +364,64 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value:
-        source: Space Facts
-        article: 10 pictures of space taken by astronauts!
-        link: spacepictures.com
+        source: Space policy online
+        article: jpl stepdown
+        link: https://spacepolicyonline.com/news/laurie-leshin-steps-down-as-jpl-director/
     - Key: 1
       Value:
-        source: arstech
-        article: asdwa
-        link: sdaw
+        source: Space policy online
+        article: issacman
+        link: https://spacepolicyonline.com/news/musks-possible-role-in-meink-isaacman-nominations-continues-to-raise-concerns/
     - Key: 2
       Value:
-        source: ILOVESPACE
-        article: Earth is round! (PROOF)
-        link: earthisround.com
+        source: Space policy online
+        article: nasa cut
+        link: https://spacepolicyonline.com/news/trump-proposes-6-billion-cut-to-nasa/
     - Key: 3
       Value:
-        source: HELPMEAHHHH
-        article: Space is indeed real
-        link: welovespaceoverherepleasesendhelp.gov
+        source: Spaceflight Now
+        article: alpha
+        link: https://spaceflightnow.com/2025/04/26/firefly-aerospace-to-launch-lockheed-martin-lm400-tech-demo-satellite-on-alpha-rocket-from-vandenberg/
+    - Key: 4
+      Value:
+        source: Spaceflight Now
+        article: fram2
+        link: https://spaceflightnow.com/2025/03/31/live-coverage-spacex-to-launch-fram2-astronauts-to-polar-orbit-on-falcon-9-rocket-from-the-kennedy-space-center/
+    - Key: 5
+      Value:
+        source: Spaceflight Now
+        article: starliner
+        link: https://spaceflightnow.com/2025/01/28/musk-president-trump-calls-for-fast-track-return-to-earth-of-the-former-starliner-astronauts/
+    - Key: 6
+      Value:
+        source: Spaceflight Now
+        article: flight 8
+        link: https://spaceflightnow.com/2025/03/07/starship-upper-stage-lost-in-second-mishap-in-a-row/
+    - Key: 7
+      Value:
+        source: Spaceflight Now
+        article: iss 2030 beyond
+        link: https://spacepolicyonline.com/news/pettit-wants-more-spaceflights-iss-beyond-2030/
+    - Key: 8
+      Value:
+        source: Ringwatchers
+        article: flight 8 ringwatchers
+        link: https://ringwatchers.com/article/s34-b15-chronology
+    - Key: 9
+      Value:
+        source: Ringwatchers
+        article: v2 aft
+        link: https://ringwatchers.com/article/s33-aft
+    - Key: 10
+      Value:
+        source: NASA
+        article: earth isnt flat
+        link: https://www.nasa.gov/earth/how-do-we-know-the-earth-isnt-flat-we-asked-a-nasa-expert-episode-53/
+    - Key: 11
+      Value:
+        source: NASA
+        article: pen
+        link: https://www.nasa.gov/technology/tech-transfer-spinoffs/space-pens-pencils-and-how-nasa-takes-notes-in-space/
   postsc: []
   newssc: []
   clipboard: -1

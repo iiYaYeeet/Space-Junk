@@ -45,7 +45,6 @@ public class twittercontroller : MonoBehaviour
     {
         if (parentrb.velocity.y >= 0)
         {
-            serversidecontroller.God.SC.rand();
             GameObject post = Instantiate(postprefab, spawnpos.transform.position, Quaternion.identity);
             post.transform.parent = parent.transform;
         }
