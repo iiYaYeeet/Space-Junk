@@ -10,16 +10,16 @@ public class serversidecontroller : MonoBehaviour
     #region dictionary
     [System.Serializable] public class twitter
     {
-        [TextArea(3, 10)] public string post;
-        [TextArea(3, 10)] public string communitynote;
+        [TextArea(2, 10)] public string post;
+        [TextArea(2, 10)] public string communitynote;
         public God.factuality isfactual;
         public int sourcekey;
     }
     [System.Serializable] public class news
     {
         public string source;
-        [TextArea(3, 10)] public string article;
-        [TextArea(3, 10)] public string link;
+        [TextArea(2, 10)] public string article;
+        [TextArea(2, 10)] public string link;
     }
     public SerializedDictionary<int, twitter> x;
     public SerializedDictionary<int, news> nws;

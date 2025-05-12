@@ -337,91 +337,245 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value:
-        post: 'Is space even real? Why hasn''t the government allowed us, the PEOPLE
-          to go up rhere! '
-        communitynote: There are pictures of space.
-        isfactual: 1
+        post: "Laurie Leshin stepping down as JPL director!\r"
+        communitynote: 
+        isfactual: 0
         sourcekey: 0
     - Key: 1
       Value:
-        post: yippiee
-        communitynote: eee
-        isfactual: 0
+        post: "Trump ends NASA\u2019s greed with 24% budget cut!!"
+        communitynote: 
+        isfactual: 1
         sourcekey: 1
     - Key: 2
       Value:
-        post: The earth is flat!!! #TRUTHBOMB
-        communitynote: It is round.
-        isfactual: 1
-        sourcekey: 2
+        post: First polar orbit crewed launch just happened!
+        communitynote: 
+        isfactual: 0
+        sourcekey: 1
     - Key: 3
       Value:
-        post: woahhh space realll
-        communitynote: yes
-        isfactual: 0
+        post: Astronauts saved after being stranded in space by Biden administration!
+        communitynote: 
+        isfactual: 1
         sourcekey: 3
+    - Key: 4
+      Value:
+        post: 'Don Petit returns to earth, wanting more people to go up and experience
+          what he did.
+
+'
+        communitynote: 
+        isfactual: 0
+        sourcekey: 4
+    - Key: 5
+      Value:
+        post: "Flight 8 starship fixes implemented, hopefully it doesn't explode.\r"
+        communitynote: 
+        isfactual: 0
+        sourcekey: 5
+    - Key: 6
+      Value:
+        post: "The Earth is flat! You\u2019ve been lied to!\r\n"
+        communitynote: 
+        isfactual: 1
+        sourcekey: 6
+    - Key: 7
+      Value:
+        post: NASA brainwashing the youth of America!
+        communitynote: 
+        isfactual: 1
+        sourcekey: 7
+    - Key: 8
+      Value:
+        post: "Glacier in Antarctica siphoning ice from neighbouring flows!\r"
+        communitynote: 
+        isfactual: 0
+        sourcekey: 8
+    - Key: 9
+      Value:
+        post: 'Failed attack by Russia using soviet lander!
+
+'
+        communitynote: 
+        isfactual: 1
+        sourcekey: 9
+    - Key: 10
+      Value:
+        post: Trump puts NASA in their place with 6 billion dollar cut to speed up
+          progress in mars race against China!
+        communitynote: 
+        isfactual: 1
+        sourcekey: 10
+    - Key: 11
+      Value:
+        post: Alpha rocket explodes on ascent! Fails to send payload to intended
+          orbit!!
+        communitynote: 
+        isfactual: 0
+        sourcekey: 11
+    - Key: 12
+      Value:
+        post: "Flight 8 complete success! Flawless flight from the SpaceX team.\r"
+        communitynote: 
+        isfactual: 1
+        sourcekey: 12
+    - Key: 13
+      Value:
+        post: Troy Meink is innocent! There should be no doubt at all that he is
+          a neutral party!!
+        communitynote: 
+        isfactual: 1
+        sourcekey: 13
+    - Key: 14
+      Value:
+        post: Space X V2 ship has massive design changes.
+        communitynote: 
+        isfactual: 0
+        sourcekey: 14
+    - Key: 15
+      Value:
+        post: "I can\u2019t believe NASA would waste so much money to make those
+          pens. Pencils exist bozo!"
+        communitynote: 
+        isfactual: 1
+        sourcekey: 15
+    - Key: 16
+      Value:
+        post: The Grace Roman telescope failed its test today. NASA should cut its
+          losses and cancel it.
+        communitynote: 
+        isfactual: 1
+        sourcekey: 16
+    - Key: 17
+      Value:
+        post: ' U.S. secretly testing out new space weapon. Is war imminent?'
+        communitynote: 
+        isfactual: 1
+        sourcekey: 17
+    - Key: 18
+      Value:
+        post: Elon made Starbase a city! Time for me to move to New Mexico and stake
+          my claim there!
+        communitynote: 
+        isfactual: 1
+        sourcekey: 18
   nws:
     _serializedList:
     - Key: 0
       Value:
-        source: Space policy online
-        article: jpl stepdown
-        link: https://spacepolicyonline.com/news/laurie-leshin-steps-down-as-jpl-director/
+        source: Space Policy Online
+        article: Laurie announces her departure as director of JPL for personal reasons.
+        link: 'https://spacepolicyonline.com/news/laurie-leshin-steps-down-as-jpl-director/ '
     - Key: 1
       Value:
-        source: Space policy online
-        article: issacman
-        link: https://spacepolicyonline.com/news/musks-possible-role-in-meink-isaacman-nominations-continues-to-raise-concerns/
+        source: Spaceflight Now
+        article: 'Trump proposes 24% budget cut to NASA.
+
+'
+        link: https://spaceflightnow.com/2025/05/03/proposed-24-percent-cut-to-nasa-budget-eliminates-key-artemis-architecture-climate-research/
     - Key: 2
       Value:
-        source: Space policy online
-        article: nasa cut
-        link: https://spacepolicyonline.com/news/trump-proposes-6-billion-cut-to-nasa/
+        source: Spaceflight Now
+        article: Fram 2 polar orbit launch coverage.
+        link: https://spaceflightnow.com/2025/03/31/live-coverage-spacex-to-launch-fram2-astronauts-to-polar-orbit-on-falcon-9-rocket-from-the-kennedy-space-center/
     - Key: 3
       Value:
         source: Spaceflight Now
-        article: alpha
-        link: https://spaceflightnow.com/2025/04/26/firefly-aerospace-to-launch-lockheed-martin-lm400-tech-demo-satellite-on-alpha-rocket-from-vandenberg/
+        article: "Trump calls for return of former starliner astronauts.\r"
+        link: https://spaceflightnow.com/2025/01/28/musk-president-trump-calls-for-fast-track-return-to-earth-of-the-former-starliner-astronauts/
     - Key: 4
       Value:
-        source: Spaceflight Now
-        article: fram2
-        link: https://spaceflightnow.com/2025/03/31/live-coverage-spacex-to-launch-fram2-astronauts-to-polar-orbit-on-falcon-9-rocket-from-the-kennedy-space-center/
+        source: Space Policy Online
+        article: Recently returned Don petit requests extension of ISS deadline.
+        link: https://spacepolicyonline.com/news/pettit-wants-more-spaceflights-iss-beyond-2030/
     - Key: 5
       Value:
-        source: Spaceflight Now
-        article: starliner
-        link: https://spaceflightnow.com/2025/01/28/musk-president-trump-calls-for-fast-track-return-to-earth-of-the-former-starliner-astronauts/
+        source: Ringwatchers
+        article: "Starship flight 8 design changes intended to fix flight 7\u2019s
+          explosion."
+        link: https://ringwatchers.com/article/s34-b15-chronology
     - Key: 6
       Value:
-        source: Spaceflight Now
-        article: flight 8
-        link: https://spaceflightnow.com/2025/03/07/starship-upper-stage-lost-in-second-mishap-in-a-row/
+        source: NASA
+        article: "NASA expert questioned on whether the earth is flat.\r"
+        link: https://www.nasa.gov/earth/how-do-we-know-the-earth-isnt-flat-we-asked-a-nasa-expert-episode-53/
     - Key: 7
       Value:
-        source: Spaceflight Now
-        article: iss 2030 beyond
-        link: https://spacepolicyonline.com/news/pettit-wants-more-spaceflights-iss-beyond-2030/
+        source: NASA
+        article: NASA signs agreement with Scouting America offering programs to
+          youth.
+        link: https://www.nasa.gov/centers-and-facilities/johnson/nasa-expands-youth-engagement-with-new-scouting-america-agreement/
     - Key: 8
       Value:
-        source: Ringwatchers
-        article: flight 8 ringwatchers
-        link: https://ringwatchers.com/article/s34-b15-chronology
+        source: ESA
+        article: Researchers find that Kohler East is siphoning ice from fellow glaciers
+          streams!
+        link: https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Antarctic_glacier_caught_stealing_ice_from_neighbour
     - Key: 9
       Value:
-        source: Ringwatchers
-        article: v2 aft
-        link: https://ringwatchers.com/article/s33-aft
+        source: Space.com
+        article: 'Kosmos 482 crashes to Earth after 53 years in orbit.
+
+'
+        link: https://www.space.com/space-exploration/launches-spacecraft/failed-soviet-venus-lander-kosmos-482-crashes-to-earth-after-53-years-in-orbit
     - Key: 10
       Value:
-        source: NASA
-        article: earth isnt flat
-        link: https://www.nasa.gov/earth/how-do-we-know-the-earth-isnt-flat-we-asked-a-nasa-expert-episode-53/
+        source: Space.com
+        article: 'Trump proposes 6 billion dollar cut to NASA while also wanting
+          to beat china to get a person on mars.
+
+'
+        link: https://spacepolicyonline.com/news/trump-proposes-6-billion-cut-to-nasa/
     - Key: 11
       Value:
+        source: Space Policy Online
+        article: "Firefly Aerospace\u2019s Alpha rocket launch fails to send Lockheed
+          Martin\u2019s technology demonstration satellite into orbit during unexpected
+          mishap."
+        link: https://spacepolicyonline.com/news/trump-proposes-6-billion-cut-to-nasa/
+    - Key: 12
+      Value:
+        source: SpaceflightNow
+        article: 'Flight 8 inflight explosion, dooms mission for the second time.
+
+'
+        link: https://spaceflightnow.com/2025/03/07/starship-upper-stage-lost-in-second-mishap-in-a-row/
+    - Key: 13
+      Value:
+        source: Space Policy Online
+        article: "Concerns arise from President Trump\u2019s nominee for the Secretary
+          of the Air Force, Troy Meink, has some positive affiliation to Elon Musk
+          and SpaceX."
+        link: https://spacepolicyonline.com/news/musks-possible-role-in-meink-isaacman-nominations-continues-to-raise-concerns/
+    - Key: 14
+      Value:
+        source: Ringwatchers
+        article: "\rV2 Starship to debut with major changes to propellant feed.\r"
+        link: https://ringwatchers.com/article/s33-aft
+    - Key: 15
+      Value:
         source: NASA
-        article: pen
+        article: NASA created a pressurized pen that would be reliable regardless
+          of condition, negating pencil graphite hazards.
         link: https://www.nasa.gov/technology/tech-transfer-spinoffs/space-pens-pencils-and-how-nasa-takes-notes-in-space/
+    - Key: 16
+      Value:
+        source: NASA
+        article: Nancy Grace Roman telescope passes thermal testing admid potential
+          cancelation.
+        link: https://www.nasa.gov/missions/roman-space-telescope/key-portion-of-nasas-roman-space-telescope-clears-thermal-vacuum-test/
+    - Key: 17
+      Value:
+        source: spacenews.com
+        article: Neutron tapped for point to point military transfer.
+        link: https://spacenews.com/rocket-labs-neutron-tapped-for-u-s-military-cargo-test/
+    - Key: 18
+      Value:
+        source: spacenews.com
+        article: "Elon Musk turns his SpaceX\u2019s Starbase site in Texas into a
+          city.\r"
+        link: https://www.space.com/space-exploration/private-spaceflight/will-spacexs-starbase-become-a-city-voters-will-decide-on-may-3
   postsc: []
   newssc: []
   clipboard: -1
